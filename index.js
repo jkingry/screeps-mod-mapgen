@@ -201,8 +201,6 @@ function register(sandbox) {
                 .then(rooms => {
                     findMapRange(opt, rooms);
 
-                    sandbox.print(opt);
-
                     var map = {};
                     for (var x = opt.startX; x <= opt.endX; ++x) {
                         for (var y = opt.startY; y <= opt.endY; ++y) {
