@@ -22,5 +22,5 @@
     "url": "https://github.com/jkingry/screeps-mod-mapgen/issues"
   },
   "homepage": "https://github.com/jkingry/screeps-mod-mapgen#readme",
-  "screepsmod": true
+  "screeps_mod": true
 }
