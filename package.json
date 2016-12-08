@@ -1,6 +1,6 @@
 {
   "name": "screeps-mod-mapgen",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Screeps mod to facilitate map generation",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,11 @@
     "map",
     "cli"
   ],
-  "author": "Joseph Kingry",
+  "author": "Joseph Kingry <jkingry@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jkingry/screeps-mod-mapgen/issues"
   },
-  "homepage": "https://github.com/jkingry/screeps-mod-mapgen#readme"
+  "homepage": "https://github.com/jkingry/screeps-mod-mapgen#readme",
+  "screepsmod": true
 }
