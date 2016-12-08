@@ -135,6 +135,8 @@ const defaultOptions = {
 
     default: {},
 
+    quiet: false,
+
     borders: { top: 1, bottom: 1, left: 1, right: 1 },
     closed: { top: true, bottom: true, left: true, right: true },
 
@@ -232,7 +234,7 @@ function register(sandbox) {
                         wasPaused = true;
                         return q.when();
                     }
-                    if (opt.quiet) sandbox.print('pausing simulation');
+                    if (!opt.quiet) sandbox.print('pausing simulation');
 
                     return sandbox.system.pauseSimulation();
                 })
@@ -254,14 +256,14 @@ function register(sandbox) {
                             .then(() => sandbox.storage.db.rooms.findOne({ _id: w.roomName }))
                             .then(obj => {
                                 if (obj) {
-                                    if (opt.quiet) sandbox.print('Removing ' + obj._id);
+                                    if (!opt.quiet) sandbox.print('Removing ' + obj._id);
                                     return sandbox.map.removeRoom(obj._id);
                                 }
 
                                 return q.when();
                             })
                             .then(() => {
-                                if (opt.quiet) sandbox.print('Generating ' + w.roomName);
+                                if (!opt.quiet) sandbox.print('Generating ' + w.roomName);
                                 return sandbox.map.generateRoom(w.roomName, w.opt)
                             }),
                         q.when());
