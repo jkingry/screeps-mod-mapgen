@@ -186,7 +186,7 @@ function register(sandbox) {
     Example:
         Add a new 10 x 10 EAST NORTH sector to the default WEST NORTH sector and make a two border 'highway' between the two
 
-        map.createMap({start: 'W0N0', end: 'E10N10', closed: { left: false }, borders { left: 2 }})
+        map.createMap({start: 'W0N0', end: 'E10N10', closed: { left: false }, borders: { left: 2 }})
     `,
         function (options) {
             var opt = _.merge({}, defaultOptions, options || {});
