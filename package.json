@@ -22,5 +22,9 @@
     "url": "https://github.com/jkingry/screeps-mod-mapgen/issues"
   },
   "homepage": "https://github.com/jkingry/screeps-mod-mapgen#readme",
-  "screeps_mod": true
+  "screeps_mod": true,
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "q": "^1.4.1"
+  }
 }
