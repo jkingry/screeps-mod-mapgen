@@ -1,6 +1,6 @@
 {
   "name": "screeps-mod-mapgen",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Screeps mod to facilitate map generation",
   "main": "index.js",
   "scripts": {
