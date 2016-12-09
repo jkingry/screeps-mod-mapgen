@@ -16,5 +16,5 @@ map.generateMap()
 Add a new 10 x 10 EAST NORTH sector and make a 2 x 10 column between EAST/NORTH and WEST/NORTH
 
 ```javascript
-map.generateMap({start: 'W0N0', end: 'E10N10', closed: { left: false }, borders { left: 2 }})
+map.generateMap({start: 'W0N0', end: 'E10N10', closed: { left: false }, borders: { left: 2 }})
 ```
