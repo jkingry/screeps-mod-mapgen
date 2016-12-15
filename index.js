@@ -12,7 +12,7 @@ function isLeftBorder(opt, x, y) {
 function isRightBorder(opt, x, y) {
     if (!opt.borders) return false;
 
-    return x <= opt.endX && x > (opt.endX - opt.borders.left);
+    return x <= opt.endX && x > (opt.endX - opt.borders.right);
 }
 
 function isTopBorder(opt, x, y) {
